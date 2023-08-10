@@ -13,14 +13,26 @@ import React from "react";
 import BusinessIcon from "@mui/icons-material/Business";
 import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 const Footer = () => {
   return (
     <Box bgcolor="primary.main" mt={10}>
-      <Container sx={{ p: 5, display: "flex", flexDirection: "row",justifyContent:'space-between', gap: 5 }}>
+      <Container
+        sx={{
+          p: 5,
+          display: "flex",
+          flexDirection: { xs: "column", sm: "row" },
+          justifyContent: "space-between",
+          gap: 5,
+        }}
+      >
         <Box>
-          <Typography fontSize={30} fontWeight={500} color="#fff">
+          <Typography
+         
+            fontSize={30}
+            fontWeight={500}
+            color="#fff"
+          >
             Aubotz Labs Pvt Ltd
           </Typography>
           <List sx={{ maxWidth: 500, color: "primary.text" }}>
@@ -38,7 +50,7 @@ const Footer = () => {
                   <EmailIcon />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText primary="nfo@getpeppermint.co" />
+              <ListItemText primary="info@getpeppermint.co" />
             </ListItem>
             <ListItem>
               <ListItemAvatar>
@@ -51,7 +63,11 @@ const Footer = () => {
           </List>
         </Box>
         <Box>
-          <Typography fontSize={30} fontWeight={500} color="#fff">
+          <Typography
+            fontSize={30}
+            fontWeight={500}
+            color="#fff"
+          >
             Quick Links
           </Typography>
           <List>
@@ -103,7 +119,11 @@ const Footer = () => {
           </List>
         </Box>
         <Box>
-          <Typography fontSize={30} fontWeight={500} color="#fff">
+          <Typography
+            fontSize={30}
+            fontWeight={500}
+            color="#fff"
+          >
             Recent Posts
           </Typography>
           <List>
@@ -122,7 +142,8 @@ const Footer = () => {
                 underline="hover"
                 href="https://getpeppermint.co/about-us/"
               >
-                Autonomous Mobile Robots: The Future of Efficient Material Handling
+                Autonomous Mobile Robots: The Future of Efficient Material
+                Handling
               </Link>
             </ListItem>
             <ListItem>
@@ -131,7 +152,8 @@ const Footer = () => {
                 underline="hover"
                 href="https://getpeppermint.co/about-us/"
               >
-              Robotic Floor Scrubbers – The Future of Autonomous Cleaning at Airports
+                Robotic Floor Scrubbers – The Future of Autonomous Cleaning at
+                Airports
               </Link>
             </ListItem>
           </List>

@@ -4,7 +4,7 @@ import React from "react";
 const Mission = () => {
   return (
     <Box bgcolor="primary.main" mt={10}>
-      <Container sx={{ p: 10 }}>
+      <Container sx={{ p: {xs:5,md:10} }}>
         <Typography
           fontSize={60}
           fontWeight={500}

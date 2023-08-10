@@ -22,16 +22,17 @@ const Hero = () => {
   };
   return (
     <Box paddingTop={15}>
-      <Container sx={{ display: "flex", flexDirection: "row" }}>
+      <Container sx={{ display: "flex", flexDirection: {xs:'column',md:"row"} }}>
         <Box>
-          <Typography  component="h1" variant="h2" fontWeight={800} mb={5} p={5}>
+          <Typography  component="h1" variant="h2" fontWeight={800}   sx={{fontSize:{xs:40,md:70},mb:{xs:1,md:5},textAlign:{xs:'center',md:'left'}}} >
             Join us in reshaping the future of cleaning automation
           </Typography>
         </Box>
-        <Box>
+        <Box alignSelf='center' sx={{textAlign:'center',width:{xs:350,sm:500,md:1500},height:{xs:200,sm:300}}}>
           <iframe
-            width="560"
-            height="350"
+            textAlign='center'
+            width="100%"
+            height="100%"
             src="https://www.youtube.com/embed/fJzUZ7eA97U"
             title="YouTube video player"
             frameborder="0"
@@ -40,12 +41,12 @@ const Hero = () => {
           ></iframe>
         </Box>
       </Container>
-      <Container sx={{ display: "flex", flexDirection: "column" }}>
+      <Container sx={{ display: "flex", flexDirection: "column",pt:{xs:5,md:0}} }>
         <Divider sx={{ fontSize: 30 }}></Divider>
         <Typography mt={5} mb={5} variant="h5">
           Explore career opportunities at Peppermint.
         </Typography>
-        <Container sx={{ display: "flex", flexDirection: "row" ,gap:10}}>
+        <Container sx={{ display: "flex", flexDirection: {xs:'column',md:'row'},gap:{xs:2,md:10}}}>
           <FormControl fullWidth>
             <InputLabel>Department</InputLabel>
             <Select

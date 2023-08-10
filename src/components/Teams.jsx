@@ -5,15 +5,15 @@ const Teams = () => {
   return (
     <Box mt={5}>
       <Container>
-        <Typography fontSize={60} fontWeight={500} textAlign="center" mb={3}>
+        <Typography fontSize={60} fontWeight={700} textAlign="center" mb={3}>
           Founding Team
         </Typography>
         <Box
           sx={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: {xs:'column',sm:'row'},
             justifyContent: "center",
-            gap:10,
+            gap:{xs:5,sm:10},
           }}
         >
           <Box textAlign="center">
@@ -23,7 +23,7 @@ const Teams = () => {
                 sx={{ width: 150, height: 150 }}
               />
             </Box>
-            <Typography mt={3} fontSize={20}>Runal Dahiwade</Typography>
+            <Typography mt={3} fontSize={20} fontWeight={500}>Runal Dahiwade</Typography>
             <Typography fontSize={20}>
               Founder & Chief Executive Officer
             </Typography>
@@ -35,7 +35,7 @@ const Teams = () => {
                 sx={{ width: 150, height: 150 }}
               />
             </Box>
-            <Typography mt={3} fontSize={20}>Miraj Vora</Typography>
+            <Typography mt={3} fontSize={20} fontWeight={500}>Miraj Vora</Typography>
             <Typography fontSize={20}>
               Co-Founder & Chief Sales Officer
             </Typography>
